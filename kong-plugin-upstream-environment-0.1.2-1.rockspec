@@ -11,7 +11,7 @@ local pluginName = package:match("^kong%-plugin%-(.+)$")  -- "upstreamEnvironmen
 
 supported_platforms = {"linux", "macosx"}
 source = {
-  url = "https://github.com/bskiefer/kong-upstream-environment-plugin.git",
+  url = "git://github.com/bskiefer/kong-upstream-environment-plugin",
   tag = "0.1.2"
 }
 
