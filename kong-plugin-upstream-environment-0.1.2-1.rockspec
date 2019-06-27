@@ -15,7 +15,7 @@ source = {
   tag = "0.1.2"
 }
 
-description = {g
+description = {
   summary = "Kong is a scalable and customizable API Management Layer built on top of Nginx.",
   homepage = "http://getkong.org",
   license = "Apache 2.0"
