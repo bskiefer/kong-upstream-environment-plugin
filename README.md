@@ -1,11 +1,22 @@
-Kong plugin template
+Kong Upstream Environment Route Plugin
 ====================
 
-This repository contains a very simple Kong plugin template to get you
-up and running quickly for developing your own plugins.
+This plugin allows you to re-route and modify the `env` in the request host. 
 
-This template was designed to work with the `kong-vagrant`
-[development environment](https://github.com/Mashape/kong-vagrant). Please
-check out that repo's `README` for usage instructions.
-# kong-upstream-environment-plugin
-# kong-upstream-environment-plugin
+The original host is available via the `X-Host-Original` header
+
+### Usage
+Source: `test`
+
+  - Environment / subdomain you wish to replace
+
+Target: `dev`
+    
+  - Final environment / subdomain to replace the source with
+
+All routes that contain `test` in the `Host` will be replaced with `dev`.
+
+#### Examples
+
+1. myroute.test.exp.com > myroute.dev.exp.com
+2. test.exp.com > dev.exp.com
